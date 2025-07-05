@@ -71,6 +71,13 @@ body {
   font-weight: 700;
   width: 80%;
 }
+.hero-text-for-china-street-image p:hover,
+.hero-text-for-right-first-image p:hover,
+.hero-text-for-right-second-image p:hover,
+.last-text-on-homepage-div p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
 .left-first-image-on-home-page img {
   width: 100%;
   height: auto;
@@ -223,6 +230,10 @@ body {
   font-size: 1.2rem;
   margin-top: -0.1rem;
 }
+.latest-news-1-writings h4:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
 .span-for-red-boxes {
   width: 10px;
   height: 10px;
@@ -240,7 +251,10 @@ body {
 .div-for-trending-news h5 {
   font-size: 1.1rem;
 }
-
+.div-for-trending-news h5:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
 .trending-news-heading p {
   font-size: 1.3rem;
   font-weight: 700;
@@ -282,6 +296,7 @@ body {
   font-weight: 700;
   font-size: 2rem;
 }
+
 .div-of-staff-writer-image-and-name img {
   border-radius: 10px;
 }
@@ -300,6 +315,10 @@ body {
 .name-of-staff-writer {
   font-size: 1.4rem;
   font-weight: 700;
+}
+.name-of-staff-writer:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 #popular_blogs {
   padding: 1rem;
@@ -321,6 +340,10 @@ body {
 .main-first-text-under-polpular-blogs-image {
   font-size: 1.5rem;
   font-weight: 700;
+}
+.main-first-text-under-polpular-blogs-image:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 .date-and-ohter-details-under-popular-blog-image {
   display: flex;
@@ -361,12 +384,20 @@ body {
   font-size: 1.5rem;
   font-weight: 700;
 }
+.div-of-first-podcast-writting-under-image p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
 .div-of-second-podacst-writting-under-image p {
   color: gray;
 }
 .div-of-listen-now-text-in-podcast-article {
   font-weight: 700;
   font-size: 1.3rem;
+}
+.div-of-listen-now-text-in-podcast-article p:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 .div-of-browse-all-podcasts-butotn button {
   width: 250px;
@@ -476,6 +507,10 @@ footer {
 footer li {
   list-style: none;
   margin-bottom: 0.5rem;
+}
+footer li:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 .div-of-1st-set-of-links-in-footer {
   grid-area: first-links;
@@ -962,7 +997,7 @@ footer li {
     justify-content: center;
     gap: 1rem;
   }
-  footer i{
+  footer i {
     font-size: 2rem;
   }
 }
