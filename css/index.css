@@ -1,3 +1,23 @@
+/*//RESET*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+a,
+button,
+textarea {
+  font: inherit;
+}
+/*//RESET*/
+
 body {
   background-color: rgb(240, 239, 239) !important;
 }
@@ -14,19 +34,20 @@ body {
 
 .container-for-news-24-heading img {
   width: 100px;
-  margin-top: -0.3rem;
+  margin-top: -0.8rem;
+  display: inline;
 }
 
 .div-of-first-images-on-homepage {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1.7fr 1fr 1fr;
   grid-template-areas: "left-image right-image last-image";
   padding: 0.3rem;
   gap: 1rem;
 }
 .left-first-image-on-home-page {
   grid-area: left-image;
-  justify-self: end;
+  /* justify-self: end; */
   position: relative;
 }
 .hero-text-for-china-street-image {
@@ -48,6 +69,7 @@ body {
 .hero-text-for-china-street-image p {
   font-size: 1.5rem;
   font-weight: 700;
+  width: 80%;
 }
 .left-first-image-on-home-page img {
   width: 100%;
@@ -139,12 +161,23 @@ body {
   border: 1px solid black;
   font-weight: 700;
 }
-
+#latest_news {
+  margin-top: 4rem;
+}
+.latest-news-heading-div h2 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  padding: 1rem;
+  margin-bottom: -1.8rem;
+  margin-left: 2.3rem;
+}
 .overall-div-for-latest-and-trending-news {
   display: flex;
 
   padding: 1rem;
   gap: 0.6rem;
+  justify-content: center;
+  margin-left: -1.5rem;
 }
 
 .div-for-latest-news {
@@ -164,6 +197,7 @@ body {
   background-color: white;
   height: 50%;
   padding: 0.5rem;
+  width: 400px;
 }
 .latest-news-1-div {
   display: flex;
@@ -172,7 +206,7 @@ body {
   padding: 0.3rem;
 }
 .latest-news-1-div img {
-  max-width: 200px;
+  max-width: 250px;
 }
 .latest-news-1-writings {
   margin-left: 0.5rem;
@@ -180,6 +214,280 @@ body {
 .latest-news-1-date-and-other-small-info {
   display: flex;
   gap: 2rem;
+  color: gray;
+}
+.latest-news-1-writings p {
+  color: rgb(85, 85, 85);
+}
+.latest-news-1-writings h4 {
+  font-size: 1.2rem;
+  margin-top: -0.1rem;
+}
+.span-for-red-boxes {
+  width: 10px;
+  height: 10px;
+  margin-bottom: 0.3rem;
+  display: inline-block;
+  background-color: red;
+}
+.trending-news-date-and-other-small-info {
+  display: flex;
+  justify-content: center;
+  gap: 6rem;
+  color: gray;
+  font-size: 0.8rem;
+}
+.div-for-trending-news h5 {
+  font-size: 1.1rem;
+}
+
+.trending-news-heading p {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.view-all-button-on-latest-news-page {
+  padding-left: 1rem;
+}
+.view-all-button-on-latest-news-page button {
+  padding: 0.5rem;
+  background-color: white;
+  border: 1px solid rgb(255, 83, 112);
+  color: rgb(255, 83, 112);
+  margin-left: 3rem;
+  width: 90px;
+}
+
+#staff_writers {
+  margin-top: 3rem;
+  margin-left: 1.5rem;
+}
+.div-for-staff-writers-and-view-all-headings {
+  display: flex;
+  padding: 1rem;
+}
+.view-all-div-on-staff-writers-page {
+  margin-left: auto;
+  padding: 1rem;
+}
+.div-of-pictures-and-names-of-all-staff-writers {
+  display: flex;
+  gap: 1.8rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: -2.2rem;
+  margin-top: -1.6rem;
+}
+
+.div-for-staff-writers-and-view-all-headings h2 {
+  font-weight: 700;
+  font-size: 2rem;
+}
+.div-of-staff-writer-image-and-name img {
+  border-radius: 10px;
+}
+.div-for-staff-writers-and-view-all-headings p {
+  color: rgb(255, 83, 112);
+  margin-right: 1rem;
+}
+.div-for-name-and-role-of-staff-writers {
+  display: flex;
+  flex-direction: column;
+  margin-top: -0.2rem;
+}
+.role-of-staff-writer {
+  margin-top: -0.5rem;
+}
+.name-of-staff-writer {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+#popular_blogs {
+  padding: 1rem;
+  margin-top: 2rem;
+  margin-left: 1rem;
+}
+.overall-div-for-all-divs-in-popular-blog {
+  display: flex;
+  gap: 4.2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.div-of-images-texts-and-buttons-of-popular-blogs {
+  width: 380px;
+}
+.div-of-images-texts-and-buttons-of-popular-blogs img {
+  border-radius: 10px;
+}
+.main-first-text-under-polpular-blogs-image {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.date-and-ohter-details-under-popular-blog-image {
+  display: flex;
+  color: gray;
+  margin-top: -0.5rem;
+}
+.other-detail-under-popular-blog-image {
+  margin-left: auto;
+}
+.button-under-popular-blog-image button {
+  padding: 0.4rem;
+  border-radius: 15px;
+  border: 1px solid rgb(255, 83, 112);
+  width: 100px;
+  color: rgb(255, 83, 112);
+  margin-top: 0.3rem;
+}
+#latest_podcast {
+  padding: 1rem;
+  margin-left: 1rem;
+  margin-top: 2rem;
+}
+.overall-div-of-podcast-article-except-heading {
+  display: flex;
+  gap: 4.2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.overall-div-of-podcast-article-except-heading img {
+  border-radius: 10px;
+}
+.div-of-each-podcast-card-with-writens-and-image {
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+}
+.div-of-first-podcast-writting-under-image p {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.div-of-second-podacst-writting-under-image p {
+  color: gray;
+}
+.div-of-listen-now-text-in-podcast-article {
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+.div-of-browse-all-podcasts-butotn button {
+  width: 250px;
+  padding: 0.3rem;
+  background-color: orangered;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+.div-of-browse-all-podcasts-butotn {
+  display: flex;
+  justify-content: center;
+}
+#main_page_newsletter {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.overall-div-for-newsletter-subscription-main-page {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(17, 14, 14);
+  width: 800px;
+  border-radius: 10px;
+  padding: 3rem;
+  margin-bottom: 1rem;
+}
+.div-for-main-text-in-newsletter-subscription-on-main-page p {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: white;
+}
+.div-for-input-and-button-on-newsletter-subscription-on-main-page {
+  display: flex;
+  gap: 1rem;
+}
+.div-for-input-and-button-on-newsletter-subscription-on-main-page input {
+  width: 300px;
+  padding: 0.4rem;
+  border-radius: 4px;
+  border: none;
+}
+.div-for-input-and-button-on-newsletter-subscription-on-main-page button {
+  padding: 0.4rem;
+  width: 150px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  background-color: orangered;
+  color: white;
+}
+footer {
+  background-color: rgb(17, 14, 14);
+  color: white;
+  padding: 4rem;
+}
+.overall-div-of-the-footer {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  grid-template-areas: "newsletter first-links second-links third-links media-icons";
+  padding: 1rem;
+}
+.div-of-the-newsletter-section-of-the-footer {
+  grid-area: newsletter;
+}
+.dailyscope-heading-in-footer {
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+.dailyscope-email-in-footer {
+  font-size: 0.9rem;
+  margin-top: 0.4rem;
+}
+.subscribe-to-newletter-div-in-footer {
+  margin-top: 2rem;
+}
+.subscribe-to-newletter-div-in-footer input {
+  border-radius: 20px;
+  padding: 0.4rem;
+  border: none;
+  outline: none;
+  margin-top: -1rem;
+  width: 210px;
+}
+.text-under-input-for-nesletter-and-styled-arrow-in-footer {
+  width: 220px;
+}
+.div-of-input-email-for-newsletter-and-styles-arrow {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.styled-arrow-button-for-newsletter-in-footer button {
+  padding: 0.3rem;
+  border-radius: 50%;
+  border: none;
+  width: 35px;
+  height: 35px;
+  margin-top: -0.2rem;
+  margin-left: -0.6rem;
+}
+footer li {
+  list-style: none;
+  margin-bottom: 0.5rem;
+}
+.div-of-1st-set-of-links-in-footer {
+  grid-area: first-links;
+}
+.div-of-2nd-set-of-links-in-footer {
+  grid-area: second-links;
+}
+.div-of-3rd-set-of-links-in-footer {
+  grid-area: third-links;
+}
+.div-of-social-media-icons-in-footer {
+  grid-area: media-icons;
 }
 /* Medium screens (tablets) */
 @media (max-width: 992px) {
@@ -192,5 +500,469 @@ body {
 @media (max-width: 576px) {
   .container-for-news-24-heading h1 {
     font-size: 2.5rem !important;
+  }
+}
+
+/* Media Queries for Non-PC Devices */
+/* Medium tablets (577px - 768px) */
+@media (max-width: 768px) and (min-width: 577px) {
+  .container-for-news-24-heading h1 {
+    font-size: 4rem !important;
+  }
+  .container-for-news-24-heading img {
+    width: 60px;
+    margin-top: -0.5rem;
+  }
+  .navbar-nav {
+    gap: 0.5rem !important;
+  }
+  .nav-link {
+    font-size: 0.9rem !important;
+    padding: 0.5rem !important;
+  }
+  .div-of-first-images-on-homepage {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "left-image"
+      "right-image"
+      "last-image";
+    gap: 0.6rem;
+    padding: 0.5rem;
+  }
+  .left-first-image-on-home-page img {
+    width: 100%;
+    max-width: 720px;
+  }
+  .right-first-image-on-home-page {
+    flex-direction: row;
+    gap: 1.7rem;
+  }
+  .right-first-image-on-home-page img {
+    width: 100%;
+    width: 500px;
+    height: 200px;
+  }
+  .last-image-div-on-homepage {
+    flex-direction: row;
+    gap: 1.7rem;
+  }
+  .last-image-div-on-homepage img {
+    width: 100%;
+    width: 350px;
+    height: 200px;
+  }
+  .hero-text-for-china-street-image {
+    top: 65%;
+
+    padding: 0.6rem;
+  }
+  .hero-text-for-china-street-image h4 {
+    font-size: 1.2rem;
+  }
+  .hero-text-for-china-street-image p {
+    font-size: 1.6rem;
+    width: 100%;
+  }
+
+  .hero-text-for-right-first-image,
+  .hero-text-for-right-second-image {
+    font-size: 1rem;
+    padding: 0.3rem;
+    top: 42%;
+  }
+  .hero-text-for-right-first-image h4,
+  .hero-text-for-right-second-image h4 {
+    font-size: 0.9rem;
+  }
+  .hero-text-for-right-first-image p,
+  .hero-text-for-right-second-image p {
+    font-size: 1.2rem;
+    width: 70%;
+  }
+  .last-text-on-homepage-div p {
+    font-size: 1.1rem;
+    padding: 0.2rem;
+  }
+  .overall-div-for-latest-and-trending-news {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+  .div-for-latest-news {
+    width: 100%;
+    max-width: 680px;
+  }
+  .div-for-trending-news {
+    width: 100%;
+    max-width: 380px;
+    margin-top: 1rem;
+  }
+  .latest-news-1-div img {
+    max-width: 180px;
+  }
+  .latest-news-1-writings h4 {
+    font-size: 1rem;
+  }
+  .latest-news-1-writings p {
+    font-size: 0.8rem;
+  }
+  .trending-news-heading p {
+    font-size: 1.1rem;
+  }
+  .div-for-trending-news h5 {
+    font-size: 0.9rem;
+  }
+  .div-of-pictures-and-names-of-all-staff-writers {
+    gap: 1rem;
+    margin-left: 0;
+  }
+  .div-of-staff-writer-image-and-name img {
+    width: 200px;
+    height: 200px;
+  }
+  .name-of-staff-writer {
+    font-size: 1.2rem;
+  }
+  .role-of-staff-writer {
+    font-size: 0.9rem;
+  }
+  .overall-div-for-all-divs-in-popular-blog {
+    row-gap: 2.3rem;
+    column-gap: 1.4rem;
+  }
+  .div-of-images-texts-and-buttons-of-popular-blogs {
+    width: 100%;
+    max-width: 270px;
+  }
+  .div-of-images-texts-and-buttons-of-popular-blogs img {
+    width: 100%;
+    height: 250px;
+    max-width: 270px;
+  }
+  .main-first-text-under-polpular-blogs-image {
+    font-size: 1.2rem;
+  }
+  .overall-div-of-podcast-article-except-heading {
+    gap: 1.5rem;
+  }
+  .div-of-each-podcast-card-with-writens-and-image {
+    width: 100%;
+    max-width: 270px;
+  }
+  .div-of-each-podcast-card-with-writens-and-image img {
+    width: 100%;
+    height: 180px;
+  }
+  .div-of-first-podcast-writting-under-image p {
+    font-size: 1.2rem;
+  }
+  .div-of-second-podacst-writting-under-image p {
+    font-size: 0.8rem;
+  }
+  .div-of-listen-now-text-in-podcast-article p {
+    font-size: 1rem;
+  }
+  .overall-div-for-newsletter-subscription-main-page {
+    width: 100%;
+    max-width: 500px;
+    padding: 1.5rem;
+  }
+  .div-for-main-text-in-newsletter-subscription-on-main-page p {
+    font-size: 1.2rem;
+  }
+  .div-for-input-and-button-on-newsletter-subscription-on-main-page input {
+    width: 200px;
+  }
+  .div-for-input-and-button-on-newsletter-subscription-on-main-page button {
+    width: 150px;
+  }
+  .overall-div-of-the-footer {
+    /*   grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+      "newsletter first-links"
+      "second-links third-links"
+      "media-icons"; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5.5rem;
+  }
+  .subscribe-to-newletter-div-in-footer input {
+    width: 200px;
+  }
+  .styled-arrow-button-for-newsletter-in-footer button {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+/* Small screens (phones, max-width: 576px) */
+@media (max-width: 576px) {
+  .container-for-news-24-heading h1 {
+    font-size: 2.5rem !important;
+  }
+  .container-for-news-24-heading img {
+    width: 50px;
+    margin-top: -0.4rem;
+  }
+  .navbar-nav {
+    gap: 0.3rem !important;
+  }
+  .nav-link {
+    font-size: 0.8rem !important;
+    padding: 0.3rem !important;
+  }
+  .div-of-first-images-on-homepage {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "left-image"
+      "right-image"
+      "last-image";
+    gap: 0.5rem;
+    padding: 0.3rem;
+  }
+  .left-first-image-on-home-page img {
+    width: 100%;
+    max-width: 100%;
+  }
+  .right-first-image-on-home-page img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+  .last-image-div-on-homepage img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  .hero-text-for-china-street-image {
+    top: 60%;
+    font-size: 1.1rem;
+    padding: 0.5rem;
+  }
+  .hero-text-for-china-street-image h4 {
+    font-size: 1rem;
+  }
+  .hero-text-for-china-street-image p {
+    font-size: 1rem;
+    width: 100%;
+  }
+  .hero-text-for-right-first-image {
+    top: 35%;
+  }
+  .hero-text-for-right-second-image {
+    top: 85%;
+  }
+  .hero-text-for-right-first-image,
+  .hero-text-for-right-second-image {
+    font-size: 0.9rem;
+    padding: 0.2rem;
+  }
+  .hero-text-for-right-first-image h4,
+  .hero-text-for-right-second-image h4 {
+    font-size: 0.8rem;
+  }
+  .hero-text-for-right-first-image p,
+  .hero-text-for-right-second-image p {
+    font-size: 1rem;
+    width: 100%;
+  }
+  .last-text-on-homepage-div p {
+    font-size: 1rem;
+    padding: 0.2rem;
+  }
+  .latest-news-heading-div h2 {
+    font-size: 2.3rem;
+    margin-left: 0.5rem;
+    margin-bottom: 1px;
+  }
+  .overall-div-for-latest-and-trending-news {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    padding: 0.5rem;
+  }
+  .div-for-latest-news {
+    width: 100%;
+    max-width: 100%;
+  }
+  .div-for-trending-news {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 0.8rem;
+  }
+  .latest-news-1-div {
+    flex-direction: column;
+    align-items: center;
+  }
+  .latest-news-1-div img {
+    max-width: 100%;
+    margin-bottom: 0.5rem;
+  }
+  .latest-news-1-writings {
+    margin-left: 0;
+    text-align: center;
+  }
+  .latest-news-1-writings h4 {
+    font-size: 1.4rem;
+  }
+  .latest-news-1-writings p {
+    font-size: 0.8rem;
+  }
+  .latest-news-1-date-and-other-small-info {
+    justify-content: center;
+    gap: 1rem;
+    font-size: 0.7rem;
+  }
+  .trending-news-heading p {
+    font-size: 1rem;
+  }
+  .div-for-trending-news h5 {
+    font-size: 1rem;
+  }
+  .trending-news-date-and-other-small-info {
+    gap: 3rem;
+    font-size: 0.7rem;
+  }
+  .view-all-button-on-latest-news-page {
+    margin-left: 0;
+    text-align: center;
+  }
+  .view-all-button-on-latest-news-page button {
+    margin-left: 0;
+    width: 80px;
+  }
+  #staff_writers {
+    margin-left: 0;
+    padding: 0.5rem;
+  }
+  .div-for-staff-writers-and-view-all-headings {
+    align-items: center;
+    gap: 2rem;
+  }
+  .div-for-staff-writers-and-view-all-headings h2 {
+    font-size: 1.8rem;
+  }
+  .view-all-div-on-staff-writers-page {
+    margin-left: 0;
+    padding: 0.5rem;
+    margin-top: 0.4rem;
+  }
+  .div-of-pictures-and-names-of-all-staff-writers {
+    gap: 0.8rem;
+    margin-left: 0;
+  }
+  .div-of-staff-writer-image-and-name img {
+    width: 170px;
+    height: 170px;
+  }
+  .name-of-staff-writer {
+    font-size: 1.1rem;
+  }
+  .role-of-staff-writer {
+    font-size: 0.8rem;
+  }
+
+  .popular-blogs-heading-div h2 {
+    font-size: 2.3rem;
+  }
+  .overall-div-for-all-divs-in-popular-blog {
+    gap: 1rem;
+  }
+  .div-of-images-texts-and-buttons-of-popular-blogs {
+    width: 100%;
+    max-width: 100%;
+    margin-left: -1rem;
+  }
+  .div-of-images-texts-and-buttons-of-popular-blogs img {
+    width: 100%;
+    height: 220px;
+  }
+  .main-first-text-under-polpular-blogs-image {
+    font-size: 1.1rem;
+  }
+  .date-and-ohter-details-under-popular-blog-image {
+    font-size: 0.8rem;
+  }
+  .button-under-popular-blog-image button {
+    width: 80px;
+    font-size: 0.8rem;
+  }
+  #latest_podcast {
+    margin-left: 0;
+    padding: 0.5rem;
+  }
+  .div-of-latest-podcast-heading h2 {
+    font-size: 2.3rem;
+  }
+  .div-of-each-podcast-card-with-writens-and-image {
+    width: 100%;
+    max-width: 100%;
+  }
+  .div-of-each-podcast-card-with-writens-and-image img {
+    width: 100%;
+    height: 220px;
+  }
+  .div-of-first-podcast-writting-under-image p {
+    font-size: 1.3rem;
+  }
+  .div-of-second-podacst-writting-under-image p {
+    font-size: 0.75rem;
+  }
+  .div-of-listen-now-text-in-podcast-article p {
+    font-size: 1.1rem;
+  }
+  .div-of-browse-all-podcasts-butotn button {
+    width: 200px;
+    font-size: 0.9rem;
+  }
+  .overall-div-for Royce-div-for-newsletter-subscription-main-page {
+    width: 100%;
+    max-width: 100%;
+    padding: 1rem;
+  }
+  .div-for-main-text-in-news-newsletter-subscription-on-main-page p {
+    font-size: 1.1rem;
+  }
+  .div-for-input-and-button-on-newsletter-subscription-on-main-page {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  .div-for-input-and-button-on-newsletter-subscription-on-main-page input {
+    width: 100%;
+    max-width: 300px;
+  }
+  .div-for-input-and-button-on-newsletter-subscription-on-main-page button {
+    width: 100%;
+    max-width: 300px;
+  }
+  .overall-div-of-the-footer {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "newsletter"
+      "first-links"
+      "second-links"
+      "third-links"
+      "media-icons";
+    gap: 1rem;
+    padding: 1rem;
+  }
+  .subscribe-to-newletter-div-in-footer input {
+    width: 100%;
+    max-width: 300px;
+  }
+  .styled-arrow-button-for-newsletter-in-footer button {
+    width: 30px;
+    height: 30px;
+  }
+  .div-of-social-media-icons-in-footer {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  footer i{
+    font-size: 2rem;
   }
 }
