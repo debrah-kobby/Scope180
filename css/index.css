@@ -524,19 +524,6 @@ footer li:hover {
 .div-of-social-media-icons-in-footer {
   grid-area: media-icons;
 }
-/* Medium screens (tablets) */
-@media (max-width: 992px) {
-  .container-for-news-24-heading h1 {
-    font-size: 4rem !important;
-  }
-}
-
-/* Small screens (phones) */
-@media (max-width: 576px) {
-  .container-for-news-24-heading h1 {
-    font-size: 2.5rem !important;
-  }
-}
 
 /* Media Queries for Non-PC Devices */
 /* Medium tablets (577px - 768px) */
@@ -591,13 +578,6 @@ footer li:hover {
 
     padding: 0.6rem;
   }
-  .hero-text-for-china-street-image h4 {
-    font-size: 1.2rem;
-  }
-  .hero-text-for-china-street-image p {
-    font-size: 1.6rem;
-    width: 100%;
-  }
 
   .hero-text-for-right-first-image,
   .hero-text-for-right-second-image {
@@ -605,10 +585,7 @@ footer li:hover {
     padding: 0.3rem;
     top: 42%;
   }
-  .hero-text-for-right-first-image h4,
-  .hero-text-for-right-second-image h4 {
-    font-size: 0.9rem;
-  }
+
   .hero-text-for-right-first-image p,
   .hero-text-for-right-second-image p {
     font-size: 1.2rem;
@@ -632,92 +609,32 @@ footer li:hover {
     max-width: 380px;
     margin-top: 1rem;
   }
-  .latest-news-1-div img {
-    max-width: 180px;
-  }
-  .latest-news-1-writings h4 {
-    font-size: 1rem;
-  }
-  .latest-news-1-writings p {
-    font-size: 0.8rem;
-  }
-  .trending-news-heading p {
-    font-size: 1.1rem;
-  }
-  .div-for-trending-news h5 {
-    font-size: 0.9rem;
-  }
-  .div-of-pictures-and-names-of-all-staff-writers {
-    gap: 1rem;
-    margin-left: 0;
-  }
+
   .div-of-staff-writer-image-and-name img {
     width: 200px;
     height: 200px;
   }
-  .name-of-staff-writer {
-    font-size: 1.2rem;
-  }
-  .role-of-staff-writer {
-    font-size: 0.9rem;
-  }
-  .overall-div-for-all-divs-in-popular-blog {
-    row-gap: 2.3rem;
-    column-gap: 1.4rem;
-  }
+
   .div-of-images-texts-and-buttons-of-popular-blogs {
     width: 100%;
-    max-width: 270px;
+    max-width: 230px;
   }
   .div-of-images-texts-and-buttons-of-popular-blogs img {
     width: 100%;
     height: 250px;
     max-width: 270px;
   }
-  .main-first-text-under-polpular-blogs-image {
-    font-size: 1.2rem;
-  }
-  .overall-div-of-podcast-article-except-heading {
-    gap: 1.5rem;
-  }
+
   .div-of-each-podcast-card-with-writens-and-image {
     width: 100%;
-    max-width: 270px;
+    max-width: 230px;
   }
   .div-of-each-podcast-card-with-writens-and-image img {
     width: 100%;
     height: 180px;
   }
-  .div-of-first-podcast-writting-under-image p {
-    font-size: 1.2rem;
-  }
-  .div-of-second-podacst-writting-under-image p {
-    font-size: 0.8rem;
-  }
-  .div-of-listen-now-text-in-podcast-article p {
-    font-size: 1rem;
-  }
-  .overall-div-for-newsletter-subscription-main-page {
-    width: 100%;
-    max-width: 500px;
-    padding: 1.5rem;
-  }
-  .div-for-main-text-in-newsletter-subscription-on-main-page p {
-    font-size: 1.2rem;
-  }
-  .div-for-input-and-button-on-newsletter-subscription-on-main-page input {
-    width: 200px;
-  }
-  .div-for-input-and-button-on-newsletter-subscription-on-main-page button {
-    width: 150px;
-  }
+
   .overall-div-of-the-footer {
-    /*   grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, auto);
-    grid-template-areas:
-      "newsletter first-links"
-      "second-links third-links"
-      "media-icons"; */
     display: flex;
     flex-wrap: wrap;
     gap: 5.5rem;
@@ -780,7 +697,7 @@ footer li:hover {
     font-size: 1rem;
   }
   .hero-text-for-china-street-image p {
-    font-size: 1rem;
+    font-size: 1.4rem;
     width: 100%;
   }
   .hero-text-for-right-first-image {
@@ -796,11 +713,11 @@ footer li:hover {
   }
   .hero-text-for-right-first-image h4,
   .hero-text-for-right-second-image h4 {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
   .hero-text-for-right-first-image p,
   .hero-text-for-right-second-image p {
-    font-size: 1rem;
+    font-size: 1.4rem;
     width: 100%;
   }
   .last-text-on-homepage-div p {
@@ -824,7 +741,7 @@ footer li:hover {
   }
   .div-for-trending-news {
     width: 100%;
-    max-width: 100%;
+    max-width: 70%;
     margin-top: 0.8rem;
   }
   .latest-news-1-div {
@@ -850,84 +767,26 @@ footer li:hover {
     gap: 1rem;
     font-size: 0.7rem;
   }
-  .trending-news-heading p {
-    font-size: 1rem;
-  }
-  .div-for-trending-news h5 {
-    font-size: 1rem;
-  }
-  .trending-news-date-and-other-small-info {
-    gap: 3rem;
-    font-size: 0.7rem;
-  }
-  .view-all-button-on-latest-news-page {
-    margin-left: 0;
-    text-align: center;
-  }
-  .view-all-button-on-latest-news-page button {
-    margin-left: 0;
-    width: 80px;
-  }
-  #staff_writers {
-    margin-left: 0;
-    padding: 0.5rem;
-  }
-  .div-for-staff-writers-and-view-all-headings {
-    align-items: center;
-    gap: 2rem;
-  }
-  .div-for-staff-writers-and-view-all-headings h2 {
-    font-size: 1.8rem;
-  }
-  .view-all-div-on-staff-writers-page {
-    margin-left: 0;
-    padding: 0.5rem;
-    margin-top: 0.4rem;
-  }
-  .div-of-pictures-and-names-of-all-staff-writers {
-    gap: 0.8rem;
-    margin-left: 0;
-  }
+
   .div-of-staff-writer-image-and-name img {
     width: 170px;
     height: 170px;
-  }
-  .name-of-staff-writer {
-    font-size: 1.1rem;
-  }
-  .role-of-staff-writer {
-    font-size: 0.8rem;
   }
 
   .popular-blogs-heading-div h2 {
     font-size: 2.3rem;
   }
-  .overall-div-for-all-divs-in-popular-blog {
-    gap: 1rem;
-  }
+
   .div-of-images-texts-and-buttons-of-popular-blogs {
-    width: 100%;
-    max-width: 100%;
+    width: 80%;
+
     margin-left: -1rem;
   }
   .div-of-images-texts-and-buttons-of-popular-blogs img {
-    width: 100%;
+    width: 95%;
     height: 220px;
   }
-  .main-first-text-under-polpular-blogs-image {
-    font-size: 1.1rem;
-  }
-  .date-and-ohter-details-under-popular-blog-image {
-    font-size: 0.8rem;
-  }
-  .button-under-popular-blog-image button {
-    width: 80px;
-    font-size: 0.8rem;
-  }
-  #latest_podcast {
-    margin-left: 0;
-    padding: 0.5rem;
-  }
+
   .div-of-latest-podcast-heading h2 {
     font-size: 2.3rem;
   }
@@ -939,40 +798,17 @@ footer li:hover {
     width: 100%;
     height: 220px;
   }
-  .div-of-first-podcast-writting-under-image p {
-    font-size: 1.3rem;
-  }
-  .div-of-second-podacst-writting-under-image p {
-    font-size: 0.75rem;
-  }
-  .div-of-listen-now-text-in-podcast-article p {
-    font-size: 1.1rem;
-  }
   .div-of-browse-all-podcasts-butotn button {
     width: 200px;
     font-size: 0.9rem;
   }
-  .overall-div-for Royce-div-for-newsletter-subscription-main-page {
-    width: 100%;
-    max-width: 100%;
-    padding: 1rem;
-  }
-  .div-for-main-text-in-news-newsletter-subscription-on-main-page p {
-    font-size: 1.1rem;
-  }
+
   .div-for-input-and-button-on-newsletter-subscription-on-main-page {
     flex-direction: column;
     gap: 0.5rem;
     align-items: center;
   }
-  .div-for-input-and-button-on-newsletter-subscription-on-main-page input {
-    width: 100%;
-    max-width: 300px;
-  }
-  .div-for-input-and-button-on-newsletter-subscription-on-main-page button {
-    width: 100%;
-    max-width: 300px;
-  }
+
   .overall-div-of-the-footer {
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -999,5 +835,87 @@ footer li:hover {
   }
   footer i {
     font-size: 2rem;
+  }
+}
+
+/* Large tablets and small laptops (769px - 992px) */
+@media (min-width: 769px) and (max-width: 992px) {
+  .container-for-news-24-heading h1 {
+    font-size: 5.5rem !important;
+  }
+
+  .container-for-news-24-heading img {
+    width: 80px;
+    margin-top: -0.7rem;
+  }
+
+  .div-of-first-images-on-homepage {
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-areas:
+      "left-image right-image"
+      "left-image last-image";
+    gap: 1rem;
+  }
+
+  .left-first-image-on-home-page img {
+    height: 100%;
+  }
+
+  .right-first-image-on-home-page,
+  .last-image-div-on-homepage {
+    flex-direction: column;
+  }
+
+  .right-first-image-on-home-page img,
+  .last-image-div-on-homepage img {
+    width: 100%;
+    height: auto;
+  }
+
+  .hero-text-for-china-street-image {
+    top: 60%;
+    font-size: 1.8rem;
+  }
+
+  .hero-text-for-china-street-image p {
+    font-size: 1.3rem;
+  }
+
+  .overall-div-for-latest-and-trending-news {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .div-for-latest-news {
+    width: 90%;
+  }
+
+  .div-for-trending-news {
+    width: 60%;
+    margin-top: 2rem;
+  }
+}
+
+/* Laptops and desktops (993px - 1350px) */
+@media (min-width: 993px) and (max-width: 1350px) {
+  .left-first-image-on-home-page img {
+    height: 480px;
+  }
+
+  .right-first-image-on-home-page img,
+  .last-image-div-on-homepage img {
+    height: 235px;
+  }
+
+  .hero-text-for-china-street-image {
+    top: 55%;
+  }
+
+  .div-for-latest-news {
+    width: 55%;
+  }
+
+  .div-for-trending-news {
+    width: 35%;
   }
 }
