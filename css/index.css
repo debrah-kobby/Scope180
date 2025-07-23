@@ -19,7 +19,8 @@ textarea {
 /*//RESET*/
 
 body {
-  background-color: rgb(240, 239, 239) !important;
+  /* background-color: rgb(240, 239, 239) !important; */
+  background-color: white !important;
 }
 .container-for-news-24-heading {
   display: flex;
@@ -161,12 +162,13 @@ body {
   justify-content: center;
 }
 .last-text-on-homepage-div p {
-  background-color: rgb(17, 165, 133);
+  background-color: rgb(12, 12, 12);
   border-radius: 4px;
   font-size: 1.4rem;
   padding: 0.2rem;
   border: 1px solid black;
   font-weight: 700;
+  color: white;
 }
 #latest_news {
   margin-top: 4rem;
@@ -205,12 +207,14 @@ body {
   height: 50%;
   padding: 0.5rem;
   width: 400px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 .latest-news-1-div {
   display: flex;
   background-color: white;
   border-radius: 6px;
   padding: 0.3rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 .latest-news-1-div img {
   max-width: 250px;
@@ -360,6 +364,7 @@ body {
   width: 100px;
   color: rgb(255, 83, 112);
   margin-top: 0.3rem;
+  background-color: white;
 }
 #latest_podcast {
   padding: 1rem;
