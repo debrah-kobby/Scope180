@@ -13,13 +13,14 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
-    <link rel="stylesheet" href="css/index.css" />
     <link rel="icon" type="image/x-icon" href="daily-scope-logo-1.png" />
+    <link rel="stylesheet" href="css/index.css" />
     <title>Daily Scope</title>
   </head>
-  <body>
+  <body class="bg-white">
+    <!-- Header Navigation -->
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-white">
+      <nav class="navbar navbar-expand-lg bg-white">
         <div
           class="container-fluid d-flex align-items-center justify-content-between flex-wrap"
         >
@@ -33,23 +34,23 @@
             class="navbar-nav flex-row flex-wrap justify-content-center mx-auto gap-2"
           >
             <li class="nav-item">
-              <a class="nav-link px-2 text-sm" href="#">ABOUT</a>
+              <a class="nav-link px-2 small" href="#">ABOUT</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link px-2 text-sm" href="#">ECONOMY</a>
+              <a class="nav-link px-2 small" href="#">ECONOMY</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link px-2 text-sm" href="#">STYLE</a>
+              <a class="nav-link px-2 small" href="#">STYLE</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link px-2 text-sm" href="#">ART</a>
+              <a class="nav-link px-2 small" href="#">ART</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link px-2 text-sm" href="#">AGENCY</a>
+              <a class="nav-link px-2 small" href="#">AGENCY</a>
             </li>
           </ul>
 
-          <!-- Right: Social Icons (Still hidden on small screens) -->
+          <!-- Right: Social Icons -->
           <ul class="navbar-nav d-none d-lg-flex">
             <li class="nav-item">
               <a class="nav-link" href="#">
@@ -71,529 +72,883 @@
       </nav>
     </header>
 
+    <!-- Main Content -->
     <main>
-      <div class="container-for-news-24-heading">
-        <h1>
-          <img src="daily-scope-logo-2-removebg-preview.png" alt="main-logo" />
+      <!-- Logo and Title Section -->
+      <div class="d-flex justify-content-center text-center mb-4">
+        <h1
+          class="display-1 fw-normal"
+          style="font-family: Georgia, 'Times New Roman', Times, serif"
+        >
+          <img
+            src="daily-scope-logo-2-removebg-preview.png"
+            alt="main-logo"
+            class="main-logo d-inline"
+          />
           DAILYSCOPE
         </h1>
       </div>
-      <div class="div-of-first-images-on-homepage">
-        <div class="left-first-image-on-home-page">
-          <img src="dark-china-street-2.jpg" alt="dark-street" />
-          <div class="hero-text-for-china-street-image">
-            <h4>ECONOMY</h4>
-            <p>Exploring the Intricacies of Markets and the Global Economy</p>
-          </div>
-        </div>
-        <div class="right-first-image-on-home-page">
-          <div>
-            <img src="aesthetic-staricase-1.jpg" alt="aesthetic-staricase-1" />
-            <div class="hero-text-for-right-first-image">
-              <h4>STYLE</h4>
-              <p>A journey through colour, texture and trends</p>
+
+      <!-- Image Grid Section -->
+      <div class="container-fluid px-2">
+        <div class="row g-3">
+          <!-- Left Column - Large Image -->
+          <div class="col-lg-6 col-xl-5">
+            <div class="position-relative">
+              <img
+                src="dark-china-street-2.jpg"
+                alt="dark-street"
+                class="img-fluid grid-image left-image w-100"
+              />
+              <div
+                class="position-absolute hero-overlay hero-text-economy text-white p-3"
+              >
+                <h4 class="d-inline-block px-2 py-1 rounded fw-bold mb-2">
+                  ECONOMY
+                </h4>
+                <p class="fw-bold lh-sm mb-0">
+                  Exploring the Intricacies of Markets and the Global Economy
+                </p>
+              </div>
             </div>
           </div>
-          <div>
-            <img
-              src="high-school-photo-for-homepage.jpg"
-              alt="high-school-photo-for-homepage"
-            />
-            <div class="hero-text-for-right-second-image">
-              <h4>EDUCATION</h4>
-              <p>A journey through colour, texture and trends</p>
+
+          <!-- Middle Column - Two Stacked Images -->
+          <div class="col-lg-3 col-xl-3">
+            <div class="d-flex flex-column h-100">
+              <div class="position-relative mb-2 flex-fill">
+                <img
+                  src="aesthetic-staricase-1.jpg"
+                  alt="aesthetic-staricase-1"
+                  class="img-fluid grid-image right-images w-100 h-100 object-fit-cover"
+                />
+                <div
+                  class="position-absolute top-0 start-0 hero-overlay hero-text-style text-white p-2"
+                >
+                  <h4 class="d-inline-block px-2 py-1 rounded fw-bold mb-1">
+                    STYLE
+                  </h4>
+                  <p class="fw-bold small mb-0">
+                    A journey through colour, texture and trends
+                  </p>
+                </div>
+              </div>
+              <div class="position-relative flex-fill">
+                <img
+                  src="high-school-photo-for-homepage.jpg"
+                  alt="high-school-photo-for-homepage"
+                  class="img-fluid grid-image right-images w-100 h-100 object-fit-cover"
+                />
+                <div
+                  class="position-absolute hero-overlay hero-text-education text-white p-2"
+                >
+                  <h4 class="d-inline-block px-2 py-1 rounded fw-bold mb-1">
+                    EDUCATION
+                  </h4>
+                  <p class="fw-bold small mb-0">
+                    A journey through colour, texture and trends
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="last-image-div-on-homepage">
-          <div>
-            <img
-              src="market-image-for-homepage.jpg"
-              alt="market-image-for-homepage"
-            />
-            <div
-              class="hero-text-for-right-first-image hero-text-for-last-image-homepage"
-            >
-              <h4>MARKET</h4>
-              <p>Local traders adapt to rising inflation as Ghana's market.</p>
+
+          <!-- Right Column - Image and Text -->
+          <div class="col-lg-3 col-xl-4">
+            <div class="d-flex flex-column h-100">
+              <div class="position-relative mb-2 flex-fill">
+                <img
+                  src="market-image-for-homepage.jpg"
+                  alt="market-image-for-homepage"
+                  class="img-fluid grid-image right-images w-100 h-100 object-fit-cover"
+                />
+                <div
+                  class="position-absolute top-0 start-0 hero-overlay hero-text-market text-white p-2"
+                >
+                  <h4 class="d-inline-block px-2 py-1 rounded fw-bold mb-1">
+                    MARKET
+                  </h4>
+                  <p class="fw-bold small mb-0">
+                    Local traders adapt to rising inflation as Ghana's market.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="d-flex flex-column justify-content-center flex-fill check-out-more"
+              >
+                <h4 class="mb-2">Check Out More</h4>
+                <p class="text-white fw-bold rounded px-2 py-1 mb-0">
+                  Catch today's news <i class="fa-solid fa-arrow-right"></i>
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="last-text-on-homepage-div">
-            <h4>Check Out More</h4>
-            <p>Catch today's news <i class="fa-solid fa-arrow-right"></i></p>
           </div>
         </div>
       </div>
-      <article id="latest_news">
-        <div class="latest-news-heading-div"><h2>Latest News</h2></div>
-        <div class="overall-div-for-latest-and-trending-news">
-          <div class="div-for-latest-news">
-            <div class="latest-news-1-div">
-              <div>
-                <img
-                  src="cybersecurity-news-1.avif"
-                  alt=""
-                  width="400"
-                  height="1000"
-                />
-              </div>
-              <div class="latest-news-1-writings">
-                <div>
-                  <h4>
-                    Cybersecurity experts warn of increased threats as warning
-                    serves as a reminder of the critical
-                  </h4>
-                </div>
-                <div>
-                  <p>
-                    Increased threats are on the rise as world leaders grapple
-                    with tensions in global hotspots. From political unrest to
-                    cyber threats, governments are under pressure
-                  </p>
-                </div>
-                <div class="latest-news-1-date-and-other-small-info">
-                  <div>April 15, 2025</div>
-                  <div>John Doe</div>
-                </div>
-              </div>
-            </div>
-            <div class="latest-news-1-div">
-              <div><img src="athelte-news-1.avif" alt="" /></div>
-              <div class="latest-news-1-writings">
-                <div>
-                  <h4>
-                    Athlete achieves historic win at world championships Causing
-                    Stir
-                  </h4>
-                </div>
-                <div>
-                  <p>
-                    This landmark achievement reflects women’s commitment as
-                    they rise to leadership across politics, science, and
-                    innovation. Their success inspires a shift in power, policy,
-                    and future possibilities.
-                  </p>
-                </div>
-                <div class="latest-news-1-date-and-other-small-info">
-                  <div>April 15, 2025</div>
-                  <div>Emelia Brown</div>
-                </div>
-              </div>
-            </div>
-            <div class="latest-news-1-div">
-              <div><img src="chemical-currents-news-2.avif" alt="" /></div>
-              <div class="latest-news-1-writings">
-                <div>
-                  <h4>
-                    Chemical currents breaking news in chemistry and materials
-                    science
-                  </h4>
-                </div>
-                <div>
-                  <p>
-                    Pioneering advances in nanotechnology are unlocking new
-                    possibilities. Chemistry breakthroughs are set to
-                    significantly improve human health.
-                  </p>
-                </div>
-                <div class="latest-news-1-date-and-other-small-info">
-                  <div>April 15, 2025</div>
-                  <div>Matilda Yorke</div>
-                </div>
-              </div>
-            </div>
-            <div class="latest-news-1-div">
-              <div><img src="global-leaders-news-1.avif" alt="" /></div>
-              <div class="latest-news-1-writings">
-                <div>
-                  <h4>
-                    Global leaders unite to address climate crisis at COP26
-                  </h4>
-                </div>
-                <div>
-                  <p>
-                    Leaders from around the world have gathered for urgent
-                    discussions. Their goal is to address the worsening climate
-                    crisis. Growing concerns have pushed climate change to the
-                    top of the global agenda.
-                  </p>
-                </div>
-                <div class="latest-news-1-date-and-other-small-info">
-                  <div>April 15, 2025</div>
-                  <div>Freeman Cudi</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="div-for-trending-news">
-            <div class="trending-news-heading"><p>Trending News</p></div>
 
-            <div>
-              <h5>
-                <span class="span-for-red-boxes"></span>
-                Tech giants reveal advanced tools. AI assistants are set for a
-                major leap.
-              </h5>
-              <div class="trending-news-date-and-other-small-info">
-                <div>April 15, 2025</div>
-                <div>Parry Stephen</div>
-              </div>
-            </div>
-
-            <div>
-              <h5>
-                <span class="span-for-red-boxes"></span>
-                Government health plans spark anger. Locals criticize poor
-                consultation.
-              </h5>
-              <div class="trending-news-date-and-other-small-info">
-                <div>April 15, 2025</div>
-                <div>Bainn Graham</div>
-              </div>
-            </div>
-
-            <div>
-              <h5>
-                <span class="span-for-red-boxes"></span>
-                Tensions rise ahead of a key event. The community braces for
-                conflict.
-              </h5>
-              <div class="trending-news-date-and-other-small-info">
-                <div>April 15, 2025</div>
-                <div>Jones White</div>
-              </div>
-            </div>
-
-            <div>
-              <h5>
-                <span class="span-for-red-boxes"></span>
-                An iconic actor has passed away. The film industry mourns
-                deeply.
-              </h5>
-              <div class="trending-news-date-and-other-small-info">
-                <div>April 15, 2025</div>
-                <div>Mccarthy Hammond</div>
-              </div>
-            </div>
-
-            <div>
-              <h5>
-                <span class="span-for-red-boxes"></span>
-                A viral campaign gains traction. It's helping improve early
-                education.
-              </h5>
-              <div class="trending-news-date-and-other-small-info">
-                <div>April 15, 2025</div>
-                <div>Burland Kwam</div>
-              </div>
-            </div>
-
-            <div>
-              <h5>
-                <span class="span-for-red-boxes"></span>
-                Researchers explore green lifestyles. Their findings show real
-                health gains.
-              </h5>
-              <div class="trending-news-date-and-other-small-info">
-                <div>April 15, 2025</div>
-                <div>Yankey Justice</div>
-              </div>
-            </div>
-          </div>
+      <article id="latest_news" class="mt-5">
+        <!-- Section Heading -->
+        <div class="container-fluid px-4">
+          <h2
+            class="fw-bold mb-0"
+            style="
+              font-size: 2.5rem;
+              margin-left: 2.3rem;
+              margin-bottom: -1.8rem !important;
+            "
+          >
+            Latest News
+          </h2>
         </div>
-        <div class="view-all-button-on-latest-news-page">
-          <button>View All</button>
+
+        <!-- Main Content Area -->
+        <div class="container-fluid px-4 mt-4">
+          <div
+            class="row justify-content-center g-3"
+            style="margin-left: -1.5rem"
+          >
+            <!-- Latest News Column (Left) -->
+            <div class="col-lg-8 col-xl-7">
+              <div class="d-flex flex-column gap-3">
+                <!-- News Article 1 -->
+                <div class="d-flex bg-white rounded p-2 shadow-sm">
+                  <div class="flex-shrink-0">
+                    <img
+                      src="cybersecurity-news-1.avif"
+                      alt=""
+                      class="img-fluid rounded"
+                      style="
+                        max-width: 250px;
+                        width: 400px;
+                        height: 160px;
+                        object-fit: cover;
+                      "
+                    />
+                  </div>
+                  <div class="ms-3 flex-grow-1">
+                    <h4
+                      class="fs-5 mt-0 mb-2 hover-underline"
+                      style="cursor: pointer"
+                    >
+                      Cybersecurity experts warn of increased threats as warning
+                      serves as a reminder of the critical
+                    </h4>
+                    <p
+                      class="mb-2"
+                      style="color: rgb(85, 85, 85); font-size: 0.9rem"
+                    >
+                      Increased threats are on the rise as world leaders grapple
+                      with tensions in global hotspots. From political unrest to
+                      cyber threats, governments are under pressure
+                    </p>
+                    <div class="d-flex gap-4 text-muted small">
+                      <div>April 15, 2025</div>
+                      <div>John Doe</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- News Article 2 -->
+                <div class="d-flex bg-white rounded p-2 shadow-sm">
+                  <div class="flex-shrink-0">
+                    <img
+                      src="athelte-news-1.avif"
+                      alt=""
+                      class="img-fluid rounded"
+                      style="
+                        max-width: 250px;
+                        width: 400px;
+                        height: 160px;
+                        object-fit: cover;
+                      "
+                    />
+                  </div>
+                  <div class="ms-3 flex-grow-1">
+                    <h4
+                      class="fs-5 mt-0 mb-2 hover-underline"
+                      style="cursor: pointer"
+                    >
+                      Athlete achieves historic win at world championships
+                      Causing Stir
+                    </h4>
+                    <p
+                      class="mb-2"
+                      style="color: rgb(85, 85, 85); font-size: 0.9rem"
+                    >
+                      This landmark achievement reflects women's commitment as
+                      they rise to leadership across politics, science, and
+                      innovation. Their success inspires a shift in power,
+                      policy, and future possibilities.
+                    </p>
+                    <div class="d-flex gap-4 text-muted small">
+                      <div>April 15, 2025</div>
+                      <div>Emelia Brown</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- News Article 3 -->
+                <div class="d-flex bg-white rounded p-2 shadow-sm">
+                  <div class="flex-shrink-0">
+                    <img
+                      src="chemical-currents-news-2.avif"
+                      alt=""
+                      class="img-fluid rounded"
+                      style="
+                        max-width: 250px;
+                        width: 400px;
+                        height: 160px;
+                        object-fit: cover;
+                      "
+                    />
+                  </div>
+                  <div class="ms-3 flex-grow-1">
+                    <h4
+                      class="fs-5 mt-0 mb-2 hover-underline"
+                      style="cursor: pointer"
+                    >
+                      Chemical currents breaking news in chemistry and materials
+                      science
+                    </h4>
+                    <p
+                      class="mb-2"
+                      style="color: rgb(85, 85, 85); font-size: 0.9rem"
+                    >
+                      Pioneering advances in nanotechnology are unlocking new
+                      possibilities. Chemistry breakthroughs are set to
+                      significantly improve human health.
+                    </p>
+                    <div class="d-flex gap-4 text-muted small">
+                      <div>April 15, 2025</div>
+                      <div>Matilda Yorke</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- News Article 4 -->
+                <div class="d-flex bg-white rounded p-2 shadow-sm">
+                  <div class="flex-shrink-0">
+                    <img
+                      src="global-leaders-news-1.avif"
+                      alt=""
+                      class="img-fluid rounded"
+                      style="
+                        max-width: 250px;
+                        width: 400px;
+                        height: 160px;
+                        object-fit: cover;
+                      "
+                    />
+                  </div>
+                  <div class="ms-3 flex-grow-1">
+                    <h4
+                      class="fs-5 mt-0 mb-2 hover-underline"
+                      style="cursor: pointer"
+                    >
+                      Global leaders unite to address climate crisis at COP26
+                    </h4>
+                    <p
+                      class="mb-2"
+                      style="color: rgb(85, 85, 85); font-size: 0.9rem"
+                    >
+                      Leaders from around the world have gathered for urgent
+                      discussions. Their goal is to address the worsening
+                      climate crisis. Growing concerns have pushed climate
+                      change to the top of the global agenda.
+                    </p>
+                    <div class="d-flex gap-4 text-muted small">
+                      <div>April 15, 2025</div>
+                      <div>Freeman Cudi</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Trending News Column (Right) -->
+            <div class="col-lg-4 col-xl-4">
+              <div
+                class="bg-white p-3 shadow-sm d-flex flex-column gap-3"
+                style="width: 400px; height: fit-content"
+              >
+                <!-- Trending News Header -->
+                <div class="trending-news-header">
+                  <p class="fw-bold mb-3" style="font-size: 1.3rem">
+                    Trending News
+                  </p>
+                </div>
+
+                <!-- Trending Item 1 -->
+                <div>
+                  <h5
+                    class="hover-underline"
+                    style="font-size: 1.1rem; cursor: pointer"
+                  >
+                    <span
+                      class="d-inline-block bg-danger me-2"
+                      style="width: 10px; height: 10px; margin-bottom: 0.3rem"
+                    ></span>
+                    Tech giants reveal advanced tools. AI assistants are set for
+                    a major leap.
+                  </h5>
+                  <div
+                    class="d-flex justify-content-center gap-5 text-muted"
+                    style="font-size: 0.8rem"
+                  >
+                    <div>April 15, 2025</div>
+                    <div>Parry Stephen</div>
+                  </div>
+                </div>
+
+                <!-- Trending Item 2 -->
+                <div>
+                  <h5
+                    class="hover-underline"
+                    style="font-size: 1.1rem; cursor: pointer"
+                  >
+                    <span
+                      class="d-inline-block bg-danger me-2"
+                      style="width: 10px; height: 10px; margin-bottom: 0.3rem"
+                    ></span>
+                    Government health plans spark anger. Locals criticize poor
+                    consultation.
+                  </h5>
+                  <div
+                    class="d-flex justify-content-center gap-5 text-muted"
+                    style="font-size: 0.8rem"
+                  >
+                    <div>April 15, 2025</div>
+                    <div>Bainn Graham</div>
+                  </div>
+                </div>
+
+                <!-- Trending Item 3 -->
+                <div>
+                  <h5
+                    class="hover-underline"
+                    style="font-size: 1.1rem; cursor: pointer"
+                  >
+                    <span
+                      class="d-inline-block bg-danger me-2"
+                      style="width: 10px; height: 10px; margin-bottom: 0.3rem"
+                    ></span>
+                    Tensions rise ahead of a key event. The community braces for
+                    conflict.
+                  </h5>
+                  <div
+                    class="d-flex justify-content-center gap-5 text-muted"
+                    style="font-size: 0.8rem"
+                  >
+                    <div>April 15, 2025</div>
+                    <div>Jones White</div>
+                  </div>
+                </div>
+
+                <!-- Trending Item 4 -->
+                <div>
+                  <h5
+                    class="hover-underline"
+                    style="font-size: 1.1rem; cursor: pointer"
+                  >
+                    <span
+                      class="d-inline-block bg-danger me-2"
+                      style="width: 10px; height: 10px; margin-bottom: 0.3rem"
+                    ></span>
+                    An iconic actor has passed away. The film industry mourns
+                    deeply.
+                  </h5>
+                  <div
+                    class="d-flex justify-content-center gap-5 text-muted"
+                    style="font-size: 0.8rem"
+                  >
+                    <div>April 15, 2025</div>
+                    <div>Mccarthy Hammond</div>
+                  </div>
+                </div>
+
+                <!-- Trending Item 5 -->
+                <div>
+                  <h5
+                    class="hover-underline"
+                    style="font-size: 1.1rem; cursor: pointer"
+                  >
+                    <span
+                      class="d-inline-block bg-danger me-2"
+                      style="width: 10px; height: 10px; margin-bottom: 0.3rem"
+                    ></span>
+                    A viral campaign gains traction. It's helping improve early
+                    education.
+                  </h5>
+                  <div
+                    class="d-flex justify-content-center gap-5 text-muted"
+                    style="font-size: 0.8rem"
+                  >
+                    <div>April 15, 2025</div>
+                    <div>Burland Kwam</div>
+                  </div>
+                </div>
+
+                <!-- Trending Item 6 -->
+                <div>
+                  <h5
+                    class="hover-underline"
+                    style="font-size: 1.1rem; cursor: pointer"
+                  >
+                    <span
+                      class="d-inline-block bg-danger me-2"
+                      style="width: 10px; height: 10px; margin-bottom: 0.3rem"
+                    ></span>
+                    Researchers explore green lifestyles. Their findings show
+                    real health gains.
+                  </h5>
+                  <div
+                    class="d-flex justify-content-center gap-5 text-muted"
+                    style="font-size: 0.8rem"
+                  >
+                    <div>April 15, 2025</div>
+                    <div>Yankey Justice</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- View All Button -->
+          <div class="mt-3" style="padding-left: 1rem">
+            <button
+              class="btn btn-outline-danger"
+              style="
+                margin-left: 3rem;
+                width: 90px;
+                color: rgb(255, 83, 112);
+                border-color: rgb(255, 83, 112);
+              "
+            >
+              View All
+            </button>
+          </div>
         </div>
       </article>
-      <article id="staff_writers">
-        <div class="div-for-staff-writers-and-view-all-headings">
+      <!-- Staff Writers Section -->
+      <article id="staff_writers" class="staff-writers-section">
+        <!-- Section Header -->
+        <div class="d-flex p-3">
           <div>
-            <h2>Staff Writers</h2>
+            <h2 class="staff-writers-heading">Staff Writers</h2>
           </div>
-          <div class="view-all-div-on-staff-writers-page"><p>View All</p></div>
-        </div>
-        <div class="div-of-pictures-and-names-of-all-staff-writers">
-          <div class="div-of-staff-writer-image-and-name">
-            <div>
-              <img src="staff-member-6.webp" alt="" width="300" height="300" />
-            </div>
-            <div class="div-for-name-and-role-of-staff-writers">
-              <p class="name-of-staff-writer">Kristen Watson</p>
-              <p class="role-of-staff-writer">Senior Writer</p>
-            </div>
-          </div>
-          <div class="div-of-staff-writer-image-and-name">
-            <div>
-              <img src="staff-member-4.webp" alt="" width="300" height="300" />
-            </div>
-            <div class="div-for-name-and-role-of-staff-writers">
-              <p class="name-of-staff-writer">Marvin Roy</p>
-              <p class="role-of-staff-writer">Senior Writer</p>
-            </div>
-          </div>
-          <div class="div-of-staff-writer-image-and-name">
-            <div>
-              <img src="staff-member-2.webp" alt="" width="300" height="300" />
-            </div>
-            <div class="div-for-name-and-role-of-staff-writers">
-              <p class="name-of-staff-writer">Leslie Aria</p>
-              <p class="role-of-staff-writer">Senior Writer</p>
-            </div>
-          </div>
-          <div class="div-of-staff-writer-image-and-name">
-            <div>
-              <img src="staff-member-3.webp" alt="" width="300" height="300" />
-            </div>
-            <div class="div-for-name-and-role-of-staff-writers">
-              <p class="name-of-staff-writer">Hawking Alex</p>
-              <p class="role-of-staff-writer">Content Writer</p>
-            </div>
+          <div class="ms-auto p-3">
+            <p class="staff-writers-view-all mb-0">View All</p>
           </div>
         </div>
-      </article>
-      <article id="popular_blogs">
-        <div class="popular-blogs-heading-div">
-          <h2>Popular Blogs</h2>
-        </div>
-        <div class="overall-div-for-all-divs-in-popular-blog">
-          <div class="div-of-images-texts-and-buttons-of-popular-blogs">
-            <div>
-              <img src="popular-blog-1.avif" alt="" width="380" height="270" />
-            </div>
-            <div class="main-first-text-under-polpular-blogs-image">
-              <p>Ubuntu Echoes of Africa: Rooted Realms</p>
-            </div>
-            <div class="date-and-ohter-details-under-popular-blog-image">
-              <div class="date-under-popular-blog-image">April 15, 2025</div>
-              <div class="other-detail-under-popular-blog-image">
-                2 min read
-              </div>
-            </div>
-            <div class="button-under-popular-blog-image">
-              <button>Read</button>
-            </div>
-          </div>
-          <div class="div-of-images-texts-and-buttons-of-popular-blogs">
+
+        <!-- Staff Writers Grid -->
+        <div
+          class="d-flex flex-wrap justify-content-center staff-writers-container"
+        >
+          <!-- Staff Writer 1 -->
+          <div class="text-center">
             <div>
               <img
-                src="istockphoto-1477217153-612x612-2222.jpg"
+                src="staff-member-6.webp"
+                alt="Kristen Watson"
+                class="img-fluid staff-writer-image"
+              />
+            </div>
+            <div class="d-flex flex-column">
+              <p class="staff-writer-name mb-0">Kristen Watson</p>
+              <p class="staff-writer-role mb-0">Senior Writer</p>
+            </div>
+          </div>
+
+          <!-- Staff Writer 2 -->
+          <div class="text-center">
+            <div>
+              <img
+                src="staff-member-4.webp"
+                alt="Marvin Roy"
+                class="img-fluid staff-writer-image"
+              />
+            </div>
+            <div class="d-flex flex-column">
+              <p class="staff-writer-name mb-0">Marvin Roy</p>
+              <p class="staff-writer-role mb-0">Senior Writer</p>
+            </div>
+          </div>
+
+          <!-- Staff Writer 3 -->
+          <div class="text-center">
+            <div>
+              <img
+                src="staff-member-2.webp"
+                alt="Leslie Aria"
+                class="img-fluid staff-writer-image"
+              />
+            </div>
+            <div class="d-flex flex-column">
+              <p class="staff-writer-name mb-0">Leslie Aria</p>
+              <p class="staff-writer-role mb-0">Senior Writer</p>
+            </div>
+          </div>
+
+          <!-- Staff Writer 4 -->
+          <div class="text-center">
+            <div>
+              <img
+                src="staff-member-3.webp"
+                alt="Hawking Alex"
+                class="img-fluid staff-writer-image"
+              />
+            </div>
+            <div class="d-flex flex-column">
+              <p class="staff-writer-name mb-0">Hawking Alex</p>
+              <p class="staff-writer-role mb-0">Content Writer</p>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article id="popular_blogs" class="p-3 mt-4 ms-3">
+        <div class="mb-4">
+          <h2>Popular Blogs</h2>
+        </div>
+        <div class="row g-4 justify-content-center">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card border-0" style="width: 380px">
+              <img
+                src="popular-blog-1.avif"
                 alt=""
+                class="card-img-top blog-image"
                 width="380"
                 height="270"
               />
-            </div>
-            <div class="main-first-text-under-polpular-blogs-image">
-              <p>Thrones of Olympus, Chronicles of Gods: Mythology Muse</p>
-            </div>
-            <div class="date-and-ohter-details-under-popular-blog-image">
-              <div class="date-under-popular-blog-image">April 15, 2025</div>
-              <div class="other-detail-under-popular-blog-image">
-                2 min read
+              <div class="card-body px-0">
+                <h5 class="card-title fw-bold fs-4 blog-title">
+                  Ubuntu Echoes of Africa: Rooted Realms
+                </h5>
+                <div
+                  class="d-flex justify-content-between text-muted small mb-2"
+                >
+                  <span>April 15, 2025</span>
+                  <span>2 min read</span>
+                </div>
+                <button class="btn read-btn px-4 py-2">Read</button>
               </div>
-            </div>
-            <div class="button-under-popular-blog-image">
-              <button>Read</button>
             </div>
           </div>
-          <div class="div-of-images-texts-and-buttons-of-popular-blogs">
-            <div>
-              <img src="popular-blogs-3.webp" alt="" width="380" height="270" />
-            </div>
-            <div class="main-first-text-under-polpular-blogs-image">
-              <p>The science behind effective call-to-action buttons</p>
-            </div>
-            <div class="date-and-ohter-details-under-popular-blog-image">
-              <div class="date-under-popular-blog-image">April 15, 2025</div>
-              <div class="other-detail-under-popular-blog-image">
-                2 min read
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card border-0" style="width: 380px">
+              <img
+                src="istockphoto-1477217153-612x612-2222.jpg"
+                alt=""
+                class="card-img-top blog-image"
+                width="380"
+                height="270"
+              />
+              <div class="card-body px-0">
+                <h5 class="card-title fw-bold fs-4 blog-title">
+                  Thrones of Olympus, Chronicles of Gods: Mythology Muse
+                </h5>
+                <div
+                  class="d-flex justify-content-between text-muted small mb-2"
+                >
+                  <span>April 15, 2025</span>
+                  <span>2 min read</span>
+                </div>
+                <button class="btn read-btn px-4 py-2">Read</button>
               </div>
-            </div>
-            <div class="button-under-popular-blog-image">
-              <button>Read</button>
             </div>
           </div>
-          <div class="div-of-images-texts-and-buttons-of-popular-blogs">
-            <div>
-              <img src="popular-blogs-4.webp" alt="" width="380" height="270" />
-            </div>
-            <div class="main-first-text-under-polpular-blogs-image">
-              <p>What Humanity Hides in Shadows: Reflections</p>
-            </div>
-            <div class="date-and-ohter-details-under-popular-blog-image">
-              <div class="date-under-popular-blog-image">April 15, 2025</div>
-              <div class="other-detail-under-popular-blog-image">
-                2 min read
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card border-0" style="width: 380px">
+              <img
+                src="popular-blogs-3.webp"
+                alt=""
+                class="card-img-top blog-image"
+                width="380"
+                height="270"
+              />
+              <div class="card-body px-0">
+                <h5 class="card-title fw-bold fs-4 blog-title">
+                  The science behind effective call-to-action buttons
+                </h5>
+                <div
+                  class="d-flex justify-content-between text-muted small mb-2"
+                >
+                  <span>April 15, 2025</span>
+                  <span>2 min read</span>
+                </div>
+                <button class="btn read-btn px-4 py-2">Read</button>
               </div>
-            </div>
-            <div class="button-under-popular-blog-image">
-              <button>Read</button>
             </div>
           </div>
-          <div class="div-of-images-texts-and-buttons-of-popular-blogs">
-            <div>
-              <img src="popular-blog-6.avif" alt="" width="380" height="270" />
-            </div>
-            <div class="main-first-text-under-polpular-blogs-image">
-              <p>In the Quiet of Intertwined Hands</p>
-            </div>
-            <div class="date-and-ohter-details-under-popular-blog-image">
-              <div class="date-under-popular-blog-image">April 15, 2025</div>
-              <div class="other-detail-under-popular-blog-image">
-                2 min read
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card border-0" style="width: 380px">
+              <img
+                src="popular-blogs-4.webp"
+                alt=""
+                class="card-img-top blog-image"
+                width="380"
+                height="270"
+              />
+              <div class="card-body px-0">
+                <h5 class="card-title fw-bold fs-4 blog-title">
+                  What Humanity Hides in Shadows: Reflections
+                </h5>
+                <div
+                  class="d-flex justify-content-between text-muted small mb-2"
+                >
+                  <span>April 15, 2025</span>
+                  <span>2 min read</span>
+                </div>
+                <button class="btn read-btn px-4 py-2">Read</button>
               </div>
-            </div>
-            <div class="button-under-popular-blog-image">
-              <button>Read</button>
             </div>
           </div>
-          <div class="div-of-images-texts-and-buttons-of-popular-blogs">
-            <div>
-              <img src="popular-blog-5.2.webp" alt="" width="380" height="270" />
-            </div>
-            <div class="main-first-text-under-polpular-blogs-image">
-              <p>When Strength Begins to Fracture Quietly</p>
-            </div>
-            <div class="date-and-ohter-details-under-popular-blog-image">
-              <div class="date-under-popular-blog-image">April 15, 2025</div>
-              <div class="other-detail-under-popular-blog-image">
-                2 min read
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card border-0" style="width: 380px">
+              <img
+                src="popular-blog-6.avif"
+                alt=""
+                class="card-img-top blog-image"
+                width="380"
+                height="270"
+              />
+              <div class="card-body px-0">
+                <h5 class="card-title fw-bold fs-4 blog-title">
+                  In the Quiet of Intertwined Hands
+                </h5>
+                <div
+                  class="d-flex justify-content-between text-muted small mb-2"
+                >
+                  <span>April 15, 2025</span>
+                  <span>2 min read</span>
+                </div>
+                <button class="btn read-btn px-4 py-2">Read</button>
               </div>
             </div>
-            <div class="button-under-popular-blog-image">
-              <button>Read</button>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card border-0" style="width: 380px">
+              <img
+                src="popular-blog-5.2.webp"
+                alt=""
+                class="card-img-top blog-image"
+                width="380"
+                height="270"
+              />
+              <div class="card-body px-0">
+                <h5 class="card-title fw-bold fs-4 blog-title">
+                  When Strength Begins to Fracture Quietly
+                </h5>
+                <div
+                  class="d-flex justify-content-between text-muted small mb-2"
+                >
+                  <span>April 15, 2025</span>
+                  <span>2 min read</span>
+                </div>
+                <button class="btn read-btn px-4 py-2">Read</button>
+              </div>
             </div>
           </div>
         </div>
       </article>
-      <article id="latest_podcast">
-        <div class="div-of-latest-podcast-heading"><h2>Latest Podcast</h2></div>
-        <div class="overall-div-of-podcast-article-except-heading">
-          <div class="div-of-each-podcast-card-with-writens-and-image">
-            <div class="div-of-podcast-image">
-              <img src="podcast-1.webp" alt="" width="380" height="270" />
-            </div>
-            <div class="div-of-first-podcast-writting-under-image">
-              <p>Social Power: Amplifying Your Blogs</p>
-            </div>
-            <div class="div-of-second-podacst-writting-under-image">
-              <p>
-                Learn how leveraging social media platforms to increase traffic
-                and engagement
-              </p>
-            </div>
-            <div class="div-of-listen-now-text-in-podcast-article">
-              <p>Listen Now</p>
-            </div>
-          </div>
-          <div class="div-of-each-podcast-card-with-writens-and-image">
-            <div class="div-of-podcast-image">
-              <img src="podcast-2.webp" alt="" width="380" height="270" />
-            </div>
-            <div class="div-of-first-podcast-writting-under-image">
-              <p>SEO Mastery: How to Rank Higher on Google</p>
-            </div>
-            <div class="div-of-second-podacst-writting-under-image">
-              <p>
-                Get expert SEO tips to improve your blogs visibility and ranking
-              </p>
-            </div>
-            <div class="div-of-listen-now-text-in-podcast-article">
-              <p>Listen Now</p>
+
+      <article id="latest_podcast" class="p-3 ms-3 mt-4">
+        <div class="mb-4">
+          <h2>Latest Podcast</h2>
+        </div>
+        <div class="row g-4 justify-content-center mb-4">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card border-0" style="width: 380px">
+              <img
+                src="podcast-1.webp"
+                alt=""
+                class="card-img-top blog-image"
+                width="380"
+                height="270"
+              />
+              <div class="card-body px-0">
+                <h5 class="card-title fw-bold fs-4 podcast-title">
+                  Social Power: Amplifying Your Blogs
+                </h5>
+                <p class="card-text text-muted">
+                  Learn how leveraging social media platforms to increase
+                  traffic and engagement
+                </p>
+                <p class="fw-bold fs-5 listen-now mb-0">Listen Now</p>
+              </div>
             </div>
           </div>
-          <div class="div-of-each-podcast-card-with-writens-and-image">
-            <div class="div-of-podcast-image">
-              <img src="podacst-3.webp" alt="" width="380" height="270" />
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card border-0" style="width: 380px">
+              <img
+                src="podcast-2.webp"
+                alt=""
+                class="card-img-top blog-image"
+                width="380"
+                height="270"
+              />
+              <div class="card-body px-0">
+                <h5 class="card-title fw-bold fs-4 podcast-title">
+                  SEO Mastery: How to Rank Higher on Google
+                </h5>
+                <p class="card-text text-muted">
+                  Get expert SEO tips to improve your blogs visibility and
+                  ranking
+                </p>
+                <p class="fw-bold fs-5 listen-now mb-0">Listen Now</p>
+              </div>
             </div>
-            <div class="div-of-first-podcast-writting-under-image">
-              <p>Monetizing Your Blog: Turning Passion Into Profit</p>
-            </div>
-            <div class="div-of-second-podacst-writting-under-image">
-              <p>Explore top strategies for making money from your blog</p>
-            </div>
-            <div class="div-of-listen-now-text-in-podcast-article">
-              <p>Listen Now</p>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card border-0" style="width: 380px">
+              <img
+                src="podacst-3.webp"
+                alt=""
+                class="card-img-top blog-image"
+                width="380"
+                height="270"
+              />
+              <div class="card-body px-0">
+                <h5 class="card-title fw-bold fs-4 podcast-title">
+                  Monetizing Your Blog: Turning Passion Into Profit
+                </h5>
+                <p class="card-text text-muted">
+                  Explore top strategies for making money from your blog
+                </p>
+                <p class="fw-bold fs-5 listen-now mb-0">Listen Now</p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="div-of-browse-all-podcasts-butotn">
-          <button>Browse all Podcasts</button>
-        </div>
-      </article>
-      <article id="main_page_newsletter">
-        <div class="overall-div-for-newsletter-subscription-main-page">
-          <div
-            class="div-for-main-text-in-newsletter-subscription-on-main-page"
+
+        <div class="text-center">
+          <button
+            class="btn browse-btn text-white fw-semibold py-2"
+            style="width: 250px"
           >
-            <p>
+            Browse all Podcasts
+          </button>
+        </div>
+      </article>
+
+      <!-- Newsletter Section -->
+      <article
+        id="main_page_newsletter"
+        class="d-flex justify-content-center mt-4"
+      >
+        <div
+          class="text-center p-5 rounded-3 mb-3"
+          style="
+            background-color: rgb(17, 14, 14);
+            max-width: 800px;
+            width: 100%;
+          "
+        >
+          <div class="mb-4">
+            <p class="fs-4 fw-bold text-white mb-0">
               Get the news in front line by subscribe our latest updates now
             </p>
           </div>
           <div
-            class="div-for-input-and-button-on-newsletter-subscription-on-main-page"
+            class="d-flex flex-column flex-md-row gap-3 justify-content-center align-items-center"
           >
-            <div><input type="text" placeholder="Enter your email..." /></div>
-            <div class="div-of-subascribe-button-for-newsletter-on-main-page">
-              <button>SUBSCRIBE NOW</button>
-            </div>
+            <input
+              type="text"
+              placeholder="Enter your email..."
+              class="form-control newsletter-input"
+            />
+            <button class="btn text-white fw-semibold newsletter-btn">
+              SUBSCRIBE NOW
+            </button>
           </div>
         </div>
       </article>
     </main>
-    <footer>
-      <div class="overall-div-of-the-footer">
-        <div class="div-of-the-newsletter-section-of-the-footer">
-          <div class="dailyscope-heading-in-footer">DAILYSCOPE</div>
-          <div class="dailyscope-email-in-footer">info@news24@gmail.com</div>
-          <div class="subscribe-to-newletter-div-in-footer">
-            <div><p>subscribe to our newsletter</p></div>
-            <div class="div-of-input-email-for-newsletter-and-styles-arrow">
-              <div><input type="text" placeholder="Enter your email.." /></div>
-              <div class="styled-arrow-button-for-newsletter-in-footer">
-                <button><i class="fa-solid fa-arrow-right"></i></button>
+
+    <!-- Footer -->
+    <footer class="text-white py-5" style="background-color: rgb(17, 14, 14)">
+      <div class="container-fluid px-4">
+        <div class="row g-4">
+          <!-- Newsletter Section -->
+          <div class="col-12 col-lg-4">
+            <h5 class="fw-semibold fs-4 mb-2">DAILYSCOPE</h5>
+            <p class="small mb-4">info@news24@gmail.com</p>
+
+            <div>
+              <p class="mb-3">subscribe to our newsletter</p>
+              <div class="d-flex align-items-center mb-3">
+                <input
+                  type="text"
+                  placeholder="Enter your email.."
+                  class="form-control footer-input me-2"
+                />
+                <button class="btn p-2 footer-arrow-btn">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
               </div>
+              <p class="small text-muted" style="max-width: 220px">
+                From news feeds to thought-provoking content
+              </p>
             </div>
           </div>
-          <div
-            class="text-under-input-for-nesletter-and-styled-arrow-in-footer"
-          >
-            <p>From news feeds to thought-provoking content</p>
+
+          <!-- Page Links -->
+          <div class="col-6 col-md-4 col-lg-2">
+            <ul class="list-unstyled">
+              <li class="fw-bold mb-3">Page</li>
+              <li class="mb-2 footer-link">News</li>
+              <li class="mb-2 footer-link">Authors</li>
+              <li class="mb-2 footer-link">Subscription</li>
+              <li class="mb-2 footer-link">Contact us</li>
+              <li class="mb-2 footer-link">World News</li>
+            </ul>
           </div>
-        </div>
-        <div class="div-of-1st-set-of-links-in-footer">
-          <ul>
-            <li>Page</li>
-            <li>News</li>
-            <li>Authors</li>
-            <li>Subscription</li>
-            <li>Contact us</li>
-            <li>World News</li>
-          </ul>
-        </div>
-        <div class="div-of-2nd-set-of-links-in-footer">
-          <ul>
-            <li>Categories</li>
-            <li>Business</li>
-            <li>Technology</li>
-            <li>Sports</li>
-            <li>Health</li>
-            <li>Politics</li>
-            <li>World</li>
-          </ul>
-        </div>
-        <div class="div-of-3rd-set-of-links-in-footer">
-          <ul>
-            <li>Resources</li>
-            <li>Privacy Policy</li>
-            <li>Advertising</li>
-            <li>Terms & Conditions</li>
-            <li>License</li>
-          </ul>
-        </div>
-        <div class="div-of-social-media-icons-in-footer">
-          <p><i class="fa-brands fa-facebook"></i></p>
-          <p><i class="fa-brands fa-instagram"></i></p>
-          <p><i class="fa-brands fa-twitter"></i></p>
+
+          <!-- Categories -->
+          <div class="col-6 col-md-4 col-lg-2">
+            <ul class="list-unstyled">
+              <li class="fw-bold mb-3">Categories</li>
+              <li class="mb-2 footer-link">Business</li>
+              <li class="mb-2 footer-link">Technology</li>
+              <li class="mb-2 footer-link">Sports</li>
+              <li class="mb-2 footer-link">Health</li>
+              <li class="mb-2 footer-link">Politics</li>
+              <li class="mb-2 footer-link">World</li>
+            </ul>
+          </div>
+
+          <!-- Resources -->
+          <div class="col-6 col-md-4 col-lg-2">
+            <ul class="list-unstyled">
+              <li class="fw-bold mb-3">Resources</li>
+              <li class="mb-2 footer-link">Privacy Policy</li>
+              <li class="mb-2 footer-link">Advertising</li>
+              <li class="mb-2 footer-link">Terms & Conditions</li>
+              <li class="mb-2 footer-link">License</li>
+            </ul>
+          </div>
+
+          <!-- Social Media Icons -->
+          <div class="col-6 col-md-12 col-lg-2">
+            <div class="d-flex flex-column gap-3">
+              <p class="mb-0 social-icon">
+                <i class="fa-brands fa-facebook fs-4"></i>
+              </p>
+              <p class="mb-0 social-icon">
+                <i class="fa-brands fa-instagram fs-4"></i>
+              </p>
+              <p class="mb-0 social-icon">
+                <i class="fa-brands fa-twitter fs-4"></i>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
