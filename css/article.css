@@ -1,0 +1,313 @@
+/* article.css — DailyScope Article Page */
+
+/* ── Reuse topbar/header/footer/sidebar styles from index.css ── */
+/* This file only contains article-specific styles */
+
+/* ── ARTICLE HERO ── */
+.article-hero {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  min-height: 480px;
+  max-height: 700px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+}
+
+.article-hero-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.6s ease;
+}
+
+.article-hero:hover .article-hero-img {
+  transform: scale(1.02);
+}
+
+.article-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.1) 0%,
+    rgba(0,0,0,0.3) 40%,
+    rgba(0,0,0,0.85) 100%
+  );
+  z-index: 1;
+}
+
+.article-hero-content {
+  position: relative;
+  z-index: 2;
+  padding-bottom: 3rem;
+  color: #fff;
+}
+
+.article-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: 0.08em;
+  color: rgba(255,255,255,0.65);
+  margin-bottom: 1rem;
+}
+
+.article-breadcrumb a {
+  color: rgba(255,255,255,0.65);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.article-breadcrumb a:hover {
+  color: #fff;
+}
+
+.article-hero-tag {
+  display: inline-block;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  padding: 4px 12px;
+  border-radius: 2px;
+  margin-bottom: 1rem;
+  background: #e63946;
+  color: #fff;
+}
+
+.article-hero-tag.tag-blue   { background: #1d6fa5; }
+.article-hero-tag.tag-green  { background: #2a7c4f; }
+.article-hero-tag.tag-orange { background: #c46200; }
+.article-hero-tag.tag-purple { background: #6d3fa5; }
+.article-hero-tag.tag-teal   { background: #0f7c72; }
+
+.article-hero-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-weight: 900;
+  line-height: 1.15;
+  color: #fff;
+  max-width: 800px;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 20px rgba(0,0,0,0.4);
+}
+
+.article-hero-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.75);
+}
+
+.article-meta-dot {
+  opacity: 0.5;
+}
+
+/* ── ARTICLE MAIN ── */
+.article-main {
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+}
+
+/* ── SHARE BAR ── */
+.article-share-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.article-share-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  color: #999;
+  margin-right: 0.4rem;
+}
+
+.article-share-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  font-size: 0.78rem;
+  color: #fff;
+  text-decoration: none;
+  transition: transform 0.2s ease, opacity 0.2s;
+}
+
+.article-share-btn:hover { transform: translateY(-2px); opacity: 0.85; color:#fff; }
+.article-share-fb { background: #1877f2; }
+.article-share-tw { background: #1da1f2; }
+.article-share-wa { background: #25d366; }
+.article-share-li { background: #0077b5; }
+.article-share-cp { background: #555; }
+
+/* ── ARTICLE LEAD ── */
+.article-lead {
+  font-family: 'Lora', Georgia, serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.8;
+  color: #1a1a1a;
+  margin-bottom: 2rem;
+  border-left: 3px solid #e63946;
+  padding-left: 1.2rem;
+}
+
+/* ── ARTICLE BODY ── */
+.article-body p {
+  font-family: 'Lora', Georgia, serif;
+  font-size: 1.05rem;
+  line-height: 1.95;
+  color: #2c2c2c;
+  margin-bottom: 1.5rem;
+}
+
+.article-subheading {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #111;
+  margin: 2.5rem 0 1rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid #eee;
+}
+
+.article-quote {
+  border-left: 4px solid #e63946;
+  margin: 2.5rem 0;
+  padding: 1.2rem 1.5rem;
+  background: #fafafa;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.15rem;
+  font-style: italic;
+  color: #222;
+  line-height: 1.7;
+}
+
+.article-quote cite {
+  display: block;
+  margin-top: 0.8rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.78rem;
+  font-style: normal;
+  color: #888;
+  letter-spacing: 0.05em;
+}
+
+/* ── ARTICLE TAGS ── */
+.article-tags {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid #eee;
+}
+
+.article-tags-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  color: #999;
+  margin-right: 0.4rem;
+}
+
+/* ── AUTHOR CARD ── */
+.article-author-card {
+  display: flex;
+  gap: 1.2rem;
+  align-items: flex-start;
+  margin-top: 3rem;
+  padding: 1.5rem;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  background: #fafafa;
+}
+
+.article-author-avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #e63946;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 1rem;
+  flex-shrink: 0;
+  letter-spacing: 0.05em;
+}
+
+.article-author-name {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #111;
+  margin-bottom: 0.3rem;
+}
+
+.article-author-bio {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.85rem;
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ── SIDEBAR ── */
+.article-sidebar {
+  position: sticky;
+  top: 1rem;
+}
+
+/* ── MORE FROM DAILYSCOPE ── */
+.article-more-section {
+  border-top: 2px solid #111;
+  padding-top: 2.5rem;
+}
+
+/* More cards use the same ds-blog-card / ds-news-card styles from index.css */
+/* Colourful category accent on more cards */
+.more-card-accent {
+  height: 4px;
+  border-radius: 2px 2px 0 0;
+}
+.accent-red    { background: #e63946; }
+.accent-blue   { background: #1d6fa5; }
+.accent-green  { background: #2a7c4f; }
+.accent-orange { background: #c46200; }
+.accent-purple { background: #6d3fa5; }
+.accent-teal   { background: #0f7c72; }
+
+/* ── PROGRESS BAR ── */
+#readingProgressBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: #e63946;
+  z-index: 9999;
+  width: 0%;
+  transition: width 0.1s linear;
+}
